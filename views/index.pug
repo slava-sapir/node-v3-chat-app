@@ -1,0 +1,20 @@
+extends layout.pug
+
+block content
+  h1= title
+  br
+  p Welcome to #{title}
+  div(style='margin-left:20px;margin-top:20px')
+  ul#chat-messages
+  div(style='margin-left:20px;margin-top:20px')
+  form#message-form(method='GET' action='')
+    div.form-group
+      label(for='message-in') Message:
+      input#messages.form-control(type='text' placeholder='Wellcome' name='message' value='' )
+      p
+      br
+    div(style='float:left')
+      button.btn.btn-primary(type='submit') Submit 
+      button#send-location.btn.btn-primary(type='click') Send location
+
+      

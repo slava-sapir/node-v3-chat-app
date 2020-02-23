@@ -1,0 +1,12 @@
+extends layout.pug
+
+block content
+  div.centered-form
+     .centered-form__box
+      h1 Join
+      form(action='/chat')
+       label Display name
+       input(type="text" name="username" placeholder="Display name" required)
+       label Room
+       input(type="text" name="room" placeholder="Room" required)
+       button(type='submit') Join

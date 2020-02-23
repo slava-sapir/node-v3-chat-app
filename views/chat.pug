@@ -1,0 +1,12 @@
+extends layout.pug
+
+block content
+   div.chat
+       div#chat__bar.chat__sidebar
+       div.chat__main
+         div#messages.chat__messages  
+         div.compose
+            form#message-form
+             input(name="message" placeholder="Message" required)
+             button(type='submit') Send
+            button#send-location(type='submit') Send location
